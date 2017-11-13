@@ -1,23 +1,54 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
 
-export default class App extends React.Component {
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  Button
+} from 'react-native';
+
+import { 
+  StackNavigator, TabNavigator
+} from "react-navigation";
+
+export default class BeritaAkakom extends React.Component{
+  render(){
+    return(
+      <View>
+      <Text>List Of Berita</Text>
+      </View>
+      );
+  }
+}
+
+class InfoKampus extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+    <View>
+      <Text>List Of Info</Text>
+    </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const MainScreenNavigator = TabNavigator({
+  Berita: {screen: BeritaAkakom},
+  Info: {screen: InfoKampus},
+});
+
+const App = StackNavigator({
+  Home: { 
+    screen: MainScreenNavigator,
+    navigationOptions:{
+      title:'STMIK AKAKOM Yogyakarta'
+    },
   },
 });
+
