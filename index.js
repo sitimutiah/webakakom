@@ -1,4 +1,20 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+import React, { Component } from 'react'
+import{
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View
+} from 'react-native'
 
-AppRegistry.registerComponent('webakakom', () => App);
+import App from './app/App'
+
+
+export default class Web extends Component{
+    render(){
+      return(
+          <App/>
+      )
+    }
+}
+
+AppRegistry.registerComponent('webakakom', () => Web)
