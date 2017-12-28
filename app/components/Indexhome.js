@@ -15,6 +15,11 @@ const BerandaRouter = DrawerNavigator(
     Galeri:{screen: Galeri},
     Kontak: {screen: Kontak}
   },
-  {contentComponent:props => <MenuSamping {...props}/>}
+  {
+  	drawerOpenRoute: 'DrawerOpen',
+  	drawerCloseRoute: 'DrawerClose',
+  	drawerToggleRoute: 'DrawerToggle',
+  	contentComponent:props => <MenuSamping {...props}/>
+  }
 )
 export default BerandaRouter;
