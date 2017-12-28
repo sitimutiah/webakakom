@@ -10,7 +10,7 @@ export default class Berita extends Component{
           <Card style={{flex: 0}}>
           <CardItem>
               <Left>
-                <Thumbnail source={{uri: '../logo.png'}} />
+                <Thumbnail source={require('../logo.png')} />
                 <Body>
                   <Text>NativeBase</Text>
                   <Text note>April 15, 2016</Text>
@@ -19,7 +19,7 @@ export default class Berita extends Component{
             </CardItem>
             <CardItem>
               <Body>
-                <Image source={{uri: 'kunjunganum.jpg'}} style={{height: 200, width: 200, flex: 1}}/>
+                <Image source={require('./kunjunganum.jpg')} style={{height: 200, width: 200, flex: 1}}/>
                 <Text>
                   //Your text here
                 </Text>
