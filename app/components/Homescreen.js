@@ -4,6 +4,7 @@ import { Container, Header, Left, Body, Right, Button, Icon, Title,
 Content, Footer, FooterTab, Text, Tab, Tabs, TabHeading, Drawer } from 'native-base';
 import Berita from './Berita'
 import Info from './Info'
+import Arsip from './Arsip'
 
 export default class Beranda extends Component{
   render(){
@@ -18,15 +19,22 @@ export default class Beranda extends Component{
           <Body>
             <Title>STMIK AKAKOM</Title>
           </Body>
-          <Right />
+          <Right>
+            <Button transparent>
+              <Icon name='search' />
+            </Button>
+          </Right>
         </Header>
         <Content>
           <Tabs>
             <Tab heading={<TabHeading><Text>Berita</Text></TabHeading>}>
-            <Berita/>
+              <Berita/>
             </Tab>
             <Tab heading={<TabHeading><Text>Info</Text></TabHeading>}>
-            <Info/>
+              <Info/>
+            </Tab>
+            <Tab heading={<TabHeading><Text>Arsip</Text></TabHeading>}>
+              <Arsip/>
             </Tab>
           </Tabs>
         </Content>

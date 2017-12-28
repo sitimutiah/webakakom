@@ -12,7 +12,7 @@ export default class Prodi extends Component{
                 </Button>
               </Left>
               <Body>
-                <Title>PRODI</Title>
+                <Title>PROGRAM STUDI</Title>
               </Body>
               <Right />
             </Header>

@@ -17,7 +17,19 @@ export default class Kontak extends Component{
               <Right />
             </Header>
             <Content>
-              <Text>Ini Kontak</Text>
+              <Text>STMIK AKAKOM Yogyakarta 
+Jl. Raya Janti Karang Jambe No. 143 Yogyakarta 55198 Indonesia 
+Telepon +62 274 486664, Fax +62 274 486438 
+Email info@akakom.ac.id</Text>
+              <Button>
+                <Icon name='call' />
+              </Button>
+              <Button>
+                <Icon name='call' />
+              </Button>
+              <Button>
+                <Icon name='mail' />
+              </Button>
             </Content>
             <Footer>
               <FooterTab>

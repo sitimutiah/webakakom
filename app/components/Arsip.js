@@ -11,8 +11,8 @@ export default class Arsip extends Component{
             <CardItem>
               <Left>
                 <Body>
-                  <Text>Sosialisasi Prodi TI Semester Ganjil 2017/2018</Text>
-                  <Text note>Sel, 22-Agt-2017 08:53:24</Text>
+                  <Text>Kalender Akademik</Text>
+                  <Text note>Sel, 4-Agt-2015 08:27:35</Text>
                 </Body>
                 <Thumbnail source={require('../logo.png')} />
               </Left>
@@ -22,8 +22,8 @@ export default class Arsip extends Component{
             <CardItem>
               <Left>
                 <Body>
-                  <Text>Info Penggantian Jadwal Kuliah</Text>
-                  <Text note>en, 8-Mei-2017 04:30:22</Text>
+                  <Text>Blog STMIK AKAKOM Yogyakarta</Text>
+                  <Text note>Jum, 13-Sep-2013 08:05:25</Text>
                 </Body>
                 <Thumbnail source={require('../logo.png')} />
               </Left>

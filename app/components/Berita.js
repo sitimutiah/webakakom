@@ -1,39 +1,67 @@
 import React, {Component} from 'react'
 import { Image } from 'react-native'
-import { Container, Content,Card, CardItem, Left, Thumbnail, Body, Text,
+import { Container, Content, Card, CardItem, Left, Right, Thumbnail, Body, Text,
 Button, Icon } from 'native-base';
 export default class Berita extends Component{
   render(){
     return(
       <Container>
         <Content>
-          <Card style={{flex: 0}}>
-          <CardItem>
+          <Card>
+            <CardItem>
               <Left>
-                <Thumbnail source={require('../logo.png')} />
                 <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>April 15, 2016</Text>
+                  <Text>KUNJUNGAN INDUSTRI SMK UMAR FATAH KE STMIK AKAKOM</Text>
+                  <Text note>Jum, 24-Nov-2017 06:21:51</Text>
                 </Body>
+                <Thumbnail source={require('../logo.png')} />
               </Left>
             </CardItem>
-            <CardItem>
-              <Body>
-                <Image source={require('./kunjunganum.jpg')} style={{height: 200, width: 200, flex: 1}}/>
-                <Text>
-                  //Your text here
-                </Text>
-              </Body>
-            </CardItem>
+          </Card>
+          <Card>
             <CardItem>
               <Left>
-                <Button transparent textStyle={{color: '#87838B'}}>
-                  <Icon name="logo-github" />
-                  <Text>1,926 stars</Text>
-                </Button>
+                <Body>
+                  <Text>Kuliah Akbar Aksi Kebangsaan Perguruan Tinggi Melawan Radikalisme</Text>
+                  <Text note>Jum, 17-Nov-2017 06:02:09</Text>
+                </Body>
+                <Thumbnail source={require('../logo.png')} />
               </Left>
             </CardItem>
-                
+          </Card>
+          <Card>
+            <CardItem>
+              <Left>
+                <Body>
+                  <Text>DevSummit 2017- Yogyakarta Dengan Tema "Github For Kids Jaman Now"</Text>
+                  <Text note>Jum, 17-Nov-2017 06:00:45</Text>
+                </Body>
+                <Thumbnail source={require('../logo.png')} />
+              </Left>
+            </CardItem>
+          </Card>
+          <Card>
+            <CardItem>
+              <Left>
+                <Body>
+                  <Text>Kuliah TAMU Dengan Tema "Mencegah Paham Radikalisme Dengan Mengamalkan Pancasila"</Text>
+                  <Text note>Jum, 20-Okt-2017 04:26:34</Text>
+                </Body>
+                <Thumbnail source={require('../logo.png')} />
+              </Left>
+            </CardItem>
+          </Card>
+          <Card>
+            <CardItem>
+              <Left>
+                <Body>
+                  <Text>Kunjungan PT Freeport Indonesia Ke STMIK AKAKOM Yogyakarta
+</Text>
+                  <Text note>Jum, 20-Okt-2017 04:08:47</Text>
+                </Body>
+                <Thumbnail source={require('../logo.png')} />
+              </Left>
+            </CardItem>
           </Card>
         </Content>
       </Container> 
