@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import {Text, Container, Header, Left,Button, Icon, Title, Body, Right, Content, Footer,
-FooterTab} from "native-base"
+FooterTab,Card, CardItem, ListItem, List} from "native-base"
 export default class Prodi extends Component{
     render(){
+      var items = ['Komputer Akuntansi (D3)','Manajemen Informatika (D3)','Teknik Komputer (D3)','Teknik Informatika (S1)','Sistem Informasi (S1)'];
         return(
           <Container>
             <Header hasTabs>
@@ -17,7 +18,13 @@ export default class Prodi extends Component{
               <Right />
             </Header>
             <Content>
-              <Text>Ini Prodi</Text>
+            <List dataArray={items}
+            renderRow={(item) =>
+              <ListItem>
+                <Text>{item}</Text>
+              </ListItem>
+            }>
+            </List>
             </Content>
             <Footer>
               <FooterTab>

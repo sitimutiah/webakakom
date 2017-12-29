@@ -33,13 +33,6 @@ export default class Beranda extends Component{
             </Tab>
           </Tabs>
         </Content>
-        <Footer>
-          <FooterTab>
-            <Button full>
-              <Text>Footer</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
       </Container>
     );
   }

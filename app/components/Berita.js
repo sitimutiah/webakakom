@@ -21,7 +21,7 @@ export default class Berita extends Component{
             </CardItem>
           </Card>
           <Card>
-            <CardItem button onPress={()=>this.props.navigation.navigate("Beritasatu")}>
+            <CardItem button onPress={()=>navigation.navigate("Beritasatu")}>
               <Left>
                 <Body>
                   <Text>Kuliah Akbar Aksi Kebangsaan Perguruan Tinggi Melawan Radikalisme</Text>
