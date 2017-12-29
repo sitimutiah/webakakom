@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Image } from 'react-native'
 import {Text, Container, Header, Left,Button, Icon, Title, Body, Right, Content, Footer,
 FooterTab, Card, CardItem, ListItem, List} from "native-base"
 export default class Profil extends Component{
@@ -19,13 +18,16 @@ export default class Profil extends Component{
               <Right />
             </Header>
             <Content>
-            <List dataArray={items}
+            <Card dataArray={items}
             renderRow={(item) =>
-              <ListItem>
+              <CardItem>
                 <Text>{item}</Text>
-              </ListItem>
+                <Right>
+                  <Icon name="arrow-forward"/>
+                </Right>
+              </CardItem>
             }>
-            </List>
+            </Card>
             </Content>
             <Footer>
               <FooterTab>
