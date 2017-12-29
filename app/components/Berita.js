@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Image } from 'react-native'
+import { Image, Alert } from 'react-native'
 import { Container, Content, Card, CardItem, Left, Right, Thumbnail, Body, Text,
 Button, Icon } from 'native-base';
 export default class Berita extends Component{
@@ -8,7 +8,7 @@ export default class Berita extends Component{
       <Container>
         <Content>
           <Card>
-            <CardItem>
+            <CardItem button onPress={()=>Alert.alert("Lancar")}>
               <Left>
                 <Body>
                   <Text>KUNJUNGAN INDUSTRI SMK UMAR FATAH KE STMIK AKAKOM</Text>
