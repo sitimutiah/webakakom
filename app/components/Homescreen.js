@@ -19,11 +19,6 @@ export default class Beranda extends Component{
           <Body>
             <Title>STMIK AKAKOM</Title>
           </Body>
-          <Right>
-            <Button transparent>
-              <Icon name='search' />
-            </Button>
-          </Right>
         </Header>
         <Content>
           <Tabs>

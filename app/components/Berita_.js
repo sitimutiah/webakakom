@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import { Image, Alert } from 'react-native'
 import { Container, Content, Card, CardItem, Left, Right, Thumbnail, Body, Text,
 Button, Icon } from 'native-base';
+import BeritaDetail from './BeritaDetail'
 
 export default class Berita extends Component{
   render(){
-
     return(
       <Container>
         <Content>
